@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>『RIDDLE! BATTLE! SHOW!』謎一覧</title>
+    <title>RIDDLE! BATTLE! SHOW! 謎一覧</title>
     <style>
         body {
             margin: 0;
@@ -82,8 +82,9 @@
             font-weight: bold;
             margin-bottom: 20px;
             display: flex;
-            justify-content: space-between;
-            align-items: center;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 5px;
         }
 
         .back-button {
@@ -91,7 +92,8 @@
             border: none;
             font-size: 18px;
             cursor: pointer;
-            padding: 5px;
+            padding: 0px;
+            margin: 0px;
         }
 
         .description {
@@ -142,7 +144,7 @@
     </style>
 </head>
 <body>
-    <h1 class="main-title">『RIDDLE! BATTLE! SHOW!』<br>謎一覧</h1>
+    <h1 class="main-title">RIDDLE! BATTLE! SHOW!<br>謎一覧</h1>
     <div class="container">
         <div class="breadcrumb" id="breadcrumb">
             <div id="breadcrumbPath"></div>
@@ -151,8 +153,8 @@
         
         <div class="content">
             <div class="title">
-                <span id="pageTitle">『RIDDLE! BATTLE! SHOW!』謎一覧</span>
                 <button class="back-button" id="backButton" onclick="goBack()" style="display: none;">←</button>
+                <span id="pageTitle">RIDDLE! BATTLE! SHOW! 謎一覧</span>
             </div>
             
             <div id="pageContent"></div>
